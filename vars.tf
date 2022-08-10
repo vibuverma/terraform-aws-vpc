@@ -19,3 +19,15 @@ variable "public_subnets_cidr" {
   default     = ["10.0.1.0/24"]
 }
 
+variable "private_subnets_cidr" {
+  type        = list(any)
+  description = "CIDR block for Private Subnet"
+  default     = ["10.0.10.0/24"]
+}
+
+variable "aws_internet_gateway" {
+  type        = list(any)
+  description = "CIDR block for Private Subnet"
+  default     = ["0.0.0.0/0"]
+  
+}
